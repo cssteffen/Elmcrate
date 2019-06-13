@@ -68,7 +68,7 @@ $(function() {
         // (not necessary) preloading the images here...
         $items
           .add(
-            '<img src="images/ajax-loader.gif"/><img src="images/black.png"/>'
+            '<img src="Images/ajax-loader.gif"/><img src="Images/black.png"/>'
           )
           .imagesLoaded(function() {
             // add options
