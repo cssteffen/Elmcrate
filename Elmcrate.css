@@ -1,0 +1,2220 @@
+@charset "UTF-8";
+/* CSS Markup by Cara Steffen */
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+
+/*CSS for all pages navigation, fonts*/
+
+html {
+  margin: 0;
+  background: #58595b;
+}
+body {
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #58595b;
+}
+main,
+section,
+nav,
+figure,
+header,
+footer {
+  display: block;
+}
+.Title_Words {
+  font-weight: normal;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
+    "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  color: #fff;
+  margin-left: 2em;
+}
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/* Text & Buttons */
+h1 {
+  margin-top: 1.5em;
+  margin-left: 3em;
+  font-size: 5em;
+  font-weight: normal;
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  flex-wrap: wrap;
+  position: absolute;
+  object-position: center center;
+  z-index: 1;
+}
+h2 {
+  font-weight: normal;
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  color: #575451;
+  margin: auto;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: normal;
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  margin: auto;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+p {
+  font-weight: normal;
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  color: #575451;
+  line-height: 1.5;
+}
+/*Section - All*/
+
+nav a {
+  display: flex;
+  float: right;
+  margin: 3.5em 1.5em 0.5em 0em;
+  color: #fff;
+  background-color: #58595b;
+  text-decoration: none;
+  padding: 0.25em;
+  text-align: left;
+}
+nav a:hover {
+  background-color: #d4e818;
+  color: #58595b;
+}
+.single-nav {
+  list-style-type: none;
+  background-color: #58595b;
+  text-transform: uppercase;
+}
+/*CSS for HOME PAGE*/
+
+/*HOME PAGE-Header*/
+header {
+  height: 100px;
+  background: #58595b;
+  margin-bottom: 2em;
+}
+header a.logo {
+  position: absolute;
+  display: block;
+  width: 27em;
+  height: 7em;
+  background: url(Images/logo_elmc_425.jpg) no-repeat 0 0;
+  background-size: contain;
+  top: 1em;
+  left: 1.2em;
+}
+/*Section - Main*/
+
+section.hero-Welcome::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.hero-Welcome {
+  display: inline-block;
+  background-color: #58595b;
+}
+.Elms {
+  height: 400px;
+}
+.elmTrees {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+.contact-elmTrees {
+  width: 100%;
+}
+/*HOME PAGE-About Section*/
+
+section.About {
+  display: flex;
+  background-color: #d1d3d4;
+  margin-top: 50px;
+  color: #fff;
+}
+.designStudio h2 {
+  position: inherit;
+  width: 14em;
+  margin: 2em 2em 2em 2em;
+}
+.circles {
+  display: inline-flex;
+}
+.meetCara {
+  margin: 2.5em 0.5em 2em 0.5em;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #a7a9ac;
+  background: transparent url(Images/btn_meetCara.png) no-repeat center center;
+}
+.sendEmail {
+  margin: 2.5em 0.5em 2em 0.5em;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #a7a9ac;
+  background: transparent url(Images/btn_mail.png) no-repeat center center;
+}
+.moreInfo {
+  margin: 2.5em 0.5em 2em 0.5em;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #a7a9ac;
+  background: transparent url(Images/btn_info.png) no-repeat center center;
+}
+/*HOME PAGE-Photography Section*/
+
+.Photography {
+  width: 100%;
+  background-color: #fff;
+  color: #fff;
+  display: inline-block;
+}
+.fashionPhoto {
+  width: 23em;
+  float: left;
+  margin: 0.5em;
+}
+.photography_quote {
+  float: left;
+}
+.designBlockQuote {
+  display: block;
+}
+
+.experience_quote {
+  float: right;
+  margin-top: 50px;
+  margin-right: -0.5em;
+}
+.seniorPhoto {
+  width: 25em;
+  float: right;
+  position: inherit;
+}
+.Photography h2 {
+  width: 14em;
+}
+.Photography p {
+  width: 20em;
+  margin: 1em auto;
+}
+
+a.btn_Photo {
+  display: flex;
+  width: 13em;
+  height: 3em;
+  color: #575451;
+  background-color: #d1d3d4;
+  font-size: 0.7em;
+  border-radius: 0.5em;
+  padding: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.btn_Photo:hover {
+  background-color: #847151;
+  color: #fff;
+}
+/*slider slideshow*/
+
+/*HOME PAGE-Design Section*/
+
+.Design {
+  display: block;
+  width: 100%;
+  background-color: #58595b;
+  /*background-color: #e0e1e3; */
+}
+.Design h2 {
+  width: 14em;
+  padding: 0.5em;
+  color: #fff;
+  text-align: center;
+}
+.slideshowHolder {
+  height: 325px;
+  width: 500px;
+  align-self: center;
+  padding: 2em;
+  background-color: #e0e1e3;
+  margin-left: 290px;
+
+  /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+  /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+}
+.slideshowHome {
+  height: 250px;
+  padding-left: 3em;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  position: static;
+  clear: both;
+  /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+  display: flex;
+  align-content: center center; /*position: relative;
+	/*clear: both;*/
+  /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+  /*display: flex;*/
+  /*align-content: center center;*/
+  /*width: 400px;*/
+  /*height: auto;*/
+  /*background-color: #e0e1e3;*/
+  /*background: no-repeat center center;*/
+  /*background-image: url(Images/webDesign_425.png);*/
+}
+a.arrowLeft {
+  background-image: url(Images/btn_left.png);
+  display: inline-flex;
+  height: 6.5em;
+  width: 3em;
+  background-color: #a7a9ac;
+  /*margin: 100px 80px auto 305px; */
+}
+.arrowLeft:hover {
+  background-color: #847151;
+  color: #fff;
+}
+a.arrowRight {
+  background-image: url(Images/btn_right.png);
+  display: inline-flex;
+  height: 6.5em;
+  width: 3em;
+  background-color: #a7a9ac;
+  /*margin: 100px 5px 115px 315px; */
+}
+a.arrowRight:hover {
+  background-color: #847151;
+  color: #fff;
+}
+.designFooter {
+  display: flex;
+  background-color: #58595b;
+}
+a.btn_Designs {
+  display: flex;
+  float: right;
+  width: 16em;
+  height: 3em;
+  color: #575451;
+  background-color: #d1d3d4;
+  font-size: 0.7em;
+  border-radius: 0.5em;
+  margin: 1.25em -28em 1.25em 32em;
+  padding: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.btn_Designs:hover {
+  background-color: #847151;
+  color: #fff;
+}
+a.btn_Quote {
+  display: flex;
+  float: left;
+  width: 16em;
+  height: 3em;
+  color: #575451;
+  background-color: #d1d3d4;
+  font-size: 0.7em;
+  border-radius: 0.5em;
+  margin: 1.25em auto;
+  padding: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.btn_Quote:hover {
+  background-color: #847151;
+  color: #fff;
+}
+
+/*ALL PAGES-Footer Section*/
+
+.content {
+  display: flex;
+  min-height: 4em;
+  background-color: #231f20;
+  margin: auto;
+}
+.content p {
+  font-size: 0.7em;
+  margin: auto;
+  color: #939598;
+}
+a.footlink {
+  text-decoration: none;
+  margin: auto;
+  color: #939598;
+}
+.backTop {
+  display: flex;
+  float: right;
+  margin-right: 1em;
+}
+.arrowUp {
+  background-color: #847151;
+  width: 2.5em;
+  height: 2.5em;
+}
+.arrowUp:hover {
+  background-color: #d1d3d4;
+  width: 2.5em;
+  height: 2.5em;
+}
+.backTop p {
+  font-size: 0.6em;
+  width: 1em;
+  text-align: right;
+  margin: 0 1.5em;
+}
+/*CONTACT Page Markup*/
+
+/*CONTACT PAGE-Header Section*/
+
+.elmTrees {
+  position: absolute;
+  z-index: 0;
+}
+/*CONTACT PAGE-Form Section*/
+
+.messageForm {
+  align-content: center;
+  position: absolute;
+  z-index: 1;
+  width: 75%;
+  height: 70%;
+  background-color: #ffffff;
+  margin: -625px 55px;
+}
+.messageForm h2 {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  color: #575451;
+  margin: 1em 1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.messageForm p {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  color: #575451;
+  margin: 1em;
+  line-height: 1.5;
+}
+.q {
+  margin: 0em 1.5em;
+  width: 93%;
+  height: 2.4em;
+}
+.Message-form {
+  align-content: center;
+  align-items: center;
+  margin: 0em 0.7em;
+  width: 96.5%;
+  height: 10em;
+}
+.Map {
+  display: none;
+}
+a.btn_Message {
+  display: flex;
+  width: 13em;
+  height: 3em;
+  color: #575451;
+  background-color: #d1d3d4;
+  font-size: 0.7em;
+  border-radius: 0.5em;
+  margin: 0% 40%;
+  padding: 0.7em;
+  text-decoration: none;
+}
+a.btn_Message:hover {
+  background-color: #847151;
+  color: #fff;
+}
+.address {
+  height: 5em;
+  width: 10em;
+}
+.address p {
+  font-size: 0.7em;
+  font-weight: normal;
+  font-family: "Myriad Pro", "Helvetica", sans-serif;
+  color: #575451;
+  margin: 1em;
+  line-height: 0.5em;
+}
+.buffer {
+  display: flex;
+  height: 8em;
+  background-color: #d1d3d4;
+}
+/*Desktop VIEWPORTS - 1250px*/
+@media screen and (max-width: 1250px) {
+  h1 {
+    margin-left: 3em;
+    font-size: 5em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+/*Tablet VIEWPORTS - 995px*/
+@media screen and (max-width: 995px) {
+  header a.logo {
+    position: absolute;
+    display: block;
+    width: 25em;
+    height: 7em;
+    background: url(Images/logo_elmc_425.jpg) no-repeat 0 0;
+    background-size: contain;
+    top: 1em;
+    left: 1.2em;
+  }
+  h1 {
+    margin-left: 2em;
+    font-size: 5em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+  }
+  .Elms {
+    height: 350px;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 250px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 225px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -24em 1.25em 26em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em auto;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*Tablet VIEWPORTS - 960px*/
+@media screen and (max-width: 960px) {
+  header a.logo {
+    position: absolute;
+    display: block;
+    width: 22em;
+    height: 7em;
+    background: url(Images/logo_elmc_425.jpg) no-repeat 0 0;
+    background-size: contain;
+    top: 1em;
+    left: 1.2em;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 235px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 225px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -18em 1.25em 26em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em auto;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*Tablet VIEWPORTS - 905px*/
+@media screen and (max-width: 905px) {
+  /*Tablet Header Section*/
+
+  section.hero-Welcome {
+    display: inline-block;
+    background-color: #58595b;
+  }
+  .Elms {
+    height: 345px;
+  }
+  .elmTrees {
+    margin-top: 2em;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+  }
+  header a.logo {
+    width: 19em;
+    display: block;
+    float: left;
+    background: url(Images/logo_elmc_425.jpg) no-repeat 0 0;
+    background-size: contain;
+    margin-bottom: 0em;
+  }
+  nav a {
+    display: flex;
+    object-position: center;
+    margin: 7.5em 2em 1em 1em;
+    color: #fff;
+    background-color: #58595b;
+  }
+  nav a:hover {
+    background-color: #d4e818;
+    color: #58595b;
+  }
+  .single-nav {
+    list-style-type: none;
+    background-color: #58595b;
+    margin-right: 6em;
+    margin-left: 2em;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 205px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 175px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -15em 1.25em 20em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*Tablet VIEWPORTS - 800px*/
+@media screen and (max-width: 800px) {
+  .Elms {
+    height: 300px;
+  }
+  header a.logo {
+    width: 19em;
+    display: block;
+    float: left;
+    background: url(Images/logo_elmc_425.jpg) no-repeat 0 0;
+    background-size: contain;
+  }
+  nav a {
+    display: flex;
+    object-position: center;
+    margin: 7.5em 1em 1em 1em;
+    color: #fff;
+    background-color: #58595b;
+  }
+  .single-nav {
+    list-style-type: none;
+    background-color: #58595b;
+    margin-right: 4em;
+    margin-left: 0em;
+  }
+  h1 {
+    margin-left: 0.5em;
+    font-size: 5em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+  }
+  .Photography {
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    display: inline-block;
+  }
+  .fashionPhoto {
+    width: 18em;
+    float: left;
+    margin: 1em;
+  }
+  .photography_quote {
+    float: left;
+  }
+  .seniorPhoto {
+    width: 22em;
+    float: right;
+    position: inherit;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  .Photography h2 {
+    width: 13em;
+  }
+  .Photography p {
+    width: 18em;
+    margin: 1em 0em;
+  }
+  a.btn_Photo {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 1em;
+  }
+  a.btn_Photo:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 153px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 125px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -15em 1.25em 15em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*MOBILE VIEWPORTS - 727px*/
+@media screen and (max-width: 727px) {
+  header a.logo {
+    display: block;
+    background: url(Images/logo_elmc_320.png) no-repeat 0 0;
+    background-size: contain;
+  }
+  .Elms {
+    height: 350px;
+  }
+  h1 {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 5em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    object-position: center;
+    z-index: 1;
+  }
+  .elmTrees {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 22%;
+  }
+  section.About {
+    display: flex;
+    background-color: #d1d3d4;
+    margin-top: 50px;
+    color: #fff;
+  }
+  .designStudio h2 {
+    position: inherit;
+    width: 14em;
+    margin: 2em 1.25em 2em 1.5em;
+  }
+  .circles {
+    display: inline-flex;
+  }
+  .meetCara {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .sendEmail {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .moreInfo {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .Photography {
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    display: inline-block;
+  }
+  .fashionPhoto {
+    width: 14em;
+    float: left;
+    margin: 1em;
+  }
+  .photography_quote {
+    float: left;
+  }
+  .seniorPhoto {
+    width: 20em;
+    float: right;
+    position: inherit;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  .Photography h2 {
+    width: 13em;
+  }
+  .Photography p {
+    width: 18em;
+    margin: 1em 0em;
+  }
+  a.btn_Photo {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 3em;
+  }
+  a.btn_Photo:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 110px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 80px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -10em 1.25em 12em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*MOBILE VIEWPORTS - 680px*/
+@media screen and (max-width: 680px) {
+  header a.logo {
+    display: block;
+    background: url(Images/logo_elmc_320.png) no-repeat 0 0;
+    background-size: contain;
+  }
+  .Elms {
+    height: 350px;
+  }
+  h1 {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 5em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    object-position: center;
+    z-index: 1;
+  }
+  .elmTrees {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+  }
+  section.About {
+    display: flex;
+    background-color: #d1d3d4;
+    margin-top: 50px;
+    color: #fff;
+  }
+  .designStudio h2 {
+    position: inherit;
+    width: 14em;
+    margin: 2em 1.25em 2em 1.5em;
+  }
+  .circles {
+    display: inline-flex;
+  }
+  .meetCara {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .sendEmail {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .moreInfo {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .Photography {
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    display: inline-block;
+  }
+  .fashionPhoto {
+    width: 14em;
+    float: left;
+    margin: 1em;
+  }
+  .photography_quote {
+    float: left;
+  }
+  .seniorPhoto {
+    width: 20em;
+    float: right;
+    position: inherit;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  .Photography h2 {
+    width: 13em;
+  }
+  .Photography p {
+    width: 18em;
+    margin: 1em 0em;
+  }
+  a.btn_Photo {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 3em;
+  }
+  a.btn_Photo:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 95px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 70px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+}
+
+/*MOBILE VIEWPORTS - 635px*/
+@media screen and (max-width: 635px) {
+  nav a {
+    clear: both;
+    margin: 0;
+    display: flex;
+  }
+
+  header {
+    display: block;
+    clear: both;
+    height: 190px;
+  }
+
+  header a.logo {
+    display: block;
+    position: relative;
+    margin: auto auto;
+  }
+
+  nav a {
+    display: flex;
+    float: none;
+    color: #fff;
+    background-color: #58595b;
+    text-decoration: none;
+    padding: 0.25em;
+  }
+
+  nav a:hover {
+    background-color: #d4e818;
+    color: #58595b;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .single-nav {
+    width: 100%;
+    list-style-type: none;
+    background-color: #58595b;
+    text-transform: uppercase;
+    clear: both;
+  }
+  .Elms {
+    height: 350px;
+  }
+  h1 {
+    margin-top: 1em;
+    margin-left: 1.5em;
+    font-size: 5em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    object-position: center;
+    z-index: 1;
+  }
+  .elmTrees {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+  }
+  .designStudio h2 {
+    position: inherit;
+    font-size: 1.2em;
+    width: 14em;
+    margin: 2em 0.5em 2em 1em;
+  }
+  .Photography {
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    display: inline-block;
+  }
+  .fashionPhoto {
+    width: 13em;
+    float: left;
+    margin: 1em;
+  }
+  .photography_quote {
+    float: left;
+  }
+  .seniorPhoto {
+    width: 20em;
+    float: right;
+    position: inherit;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  .Photography h2 {
+    font-size: 1.3em;
+    width: 13em;
+  }
+  .Photography p {
+    font-size: 0.9em;
+    width: 18em;
+    margin: 1em 0em;
+  }
+  a.btn_Photo {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 3em;
+  }
+  a.btn_Photo:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 70px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 500px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 35px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -7em 1.25em 8em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*MOBILE VIEWPORTS - 480px*/
+@media screen and (max-width: 480px) {
+  header {
+    display: block;
+    clear: both;
+    height: 190px;
+  }
+
+  header a.logo {
+    display: block;
+    position: relative;
+    margin: auto auto;
+  }
+
+  nav a {
+    display: flex;
+    float: none;
+    color: #fff;
+    background-color: #58595b;
+    text-decoration: none;
+    padding: 0.25em;
+  }
+
+  nav a:hover {
+    background-color: #d4e818;
+    color: #58595b;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .single-nav {
+    width: 100%;
+    list-style-type: none;
+    background-color: #58595b;
+    text-transform: uppercase;
+    clear: both;
+  }
+  .Elms {
+    height: 200px;
+    margin-bottom: 2em;
+  }
+  h1 {
+    margin-top: 1em;
+    margin-left: 1.25em;
+    font-size: 4em;
+    line-height: 1.25em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    object-position: center;
+    z-index: 1;
+  }
+  .elmTrees {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 12%;
+  }
+  section.About {
+    display: block;
+    background-color: #d1d3d4;
+    margin-top: 1em;
+    color: #fff;
+  }
+  .designStudio h2 {
+    font-size: 1.2em;
+    width: 18em;
+    margin: 2em 0.5em 0em 2em;
+  }
+  .circles {
+    display: inline-flex;
+    margin: 0em 4em 0em 5em;
+  }
+  .meetCara {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .sendEmail {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .moreInfo {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .Photography {
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    display: inline-block;
+  }
+  .fashionPhoto {
+    width: 13em;
+    float: left;
+    margin: 1em;
+  }
+  .photography_quote {
+    float: left;
+  }
+  .seniorPhoto {
+    width: 20em;
+    float: right;
+    position: inherit;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  .Photography h2 {
+    font-size: 1.3em;
+    width: 13em;
+  }
+  .Photography p {
+    font-size: 0.9em;
+    width: 18em;
+    margin: 1em 0em;
+  }
+  a.btn_Photo {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 3em;
+  }
+  a.btn_Photo:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 70px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .slideshowHolder {
+    height: 325px;
+    width: 415px;
+    align-self: center;
+    padding: 2em;
+    background-color: #e0e1e3;
+    margin-left: 1px;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    height: 250px;
+    padding-left: 0.65em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    position: static;
+    clear: both;
+    /*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    display: flex;
+    align-content: center center; /*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  a.btn_Designs {
+    display: flex;
+    float: right;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 1.25em -0em 1.25em 2em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: left;
+    width: 16em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/*MOBILE VIEWPORTS - 325px*/
+@media screen and (max-width: 325px) {
+  header {
+    display: block;
+    clear: both;
+    height: 190px;
+  }
+
+  header a.logo {
+    display: block;
+    position: relative;
+    width: 90%;
+  }
+
+  nav a {
+    display: flex;
+    float: none;
+    color: #fff;
+    background-color: #58595b;
+    text-decoration: none;
+    padding: 0.25em;
+  }
+
+  nav a:hover {
+    background-color: #d4e818;
+    color: #58595b;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .single-nav {
+    width: 100%;
+    list-style-type: none;
+    background-color: #58595b;
+    text-transform: uppercase;
+    clear: both;
+  }
+  .Elms {
+    height: 190px;
+    margin-bottom: 2em;
+  }
+  h1 {
+    margin-top: 1.75em;
+    margin-left: 1em;
+    font-size: 3em;
+    line-height: 1.25em;
+    font-weight: normal;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    flex-wrap: wrap;
+    position: absolute;
+    object-position: center;
+    z-index: 1;
+  }
+  .elmTrees {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 11%;
+  }
+  section.About {
+    display: block;
+    background-color: #d1d3d4;
+    margin-top: 1em;
+    color: #fff;
+  }
+  .designStudio h2 {
+    font-size: 1.2em;
+    width: 18em;
+    margin: 2em 0.5em 0em 2em;
+  }
+  .circles {
+    display: inline-flex;
+    margin: 0em 2em 0em 2em;
+  }
+  .meetCara {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .sendEmail {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .moreInfo {
+    margin: 2em 0.5em 2em 0.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #a7a9ac;
+  }
+  .Photography {
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    display: inline-block;
+  }
+  .fashionPhoto {
+    width: 18em;
+    float: left;
+    margin: 1em;
+  }
+  .photography_quote {
+    float: none;
+  }
+  .seniorPhoto {
+    width: 20em;
+    float: right;
+    position: inherit;
+    margin: 1em 0em 1em 0em;
+    margin-bottom: 1em;
+  }
+  .Photography h2 {
+    font-size: 1.2em;
+    width: 13em;
+  }
+  .Photography p {
+    font-size: 0.9em;
+    width: 18em;
+    margin: 1em 0em;
+  }
+  a.btn_Photo {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 4em;
+  }
+  a.btn_Photo:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 70px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 315px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .Design {
+    display: block;
+    width: 100%;
+    background-color: #58595b;
+  }
+  .Design h2 {
+    width: 100%;
+    padding: 0.5em;
+    color: #fff;
+    text-align: center;
+  }
+  .slideshowHolder {
+    height: 200px;
+    width: 370px;
+    align-self: center;
+    /*padding: 0em 0em 3em 0em; */
+    background-color: #e0e1e3;
+    margin-left: -85px;
+    margin-bottom: 1em;
+
+    /*height: 250px;
+	padding-left: 22em;
+	padding-bottom: 3em;
+	position: relative;
+	clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;
+	/*
+	/*background-color: #e0e1e3;
+	background: no-repeat center center;
+	/*background-image: url(Images/webDesign_425.png);*/
+  }
+  .slideshowHome {
+    margin-top: -3em;
+    height: 230px;
+    /*padding-left: 0em;
+	/*padding-top: 0em;
+	padding-bottom: 1em;*/
+    /*position: static;
+	/*clear: both;
+	/*width: 100px;  This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;
+	align-content: center center;	/*position: relative;
+	/*clear: both;*/
+    /*height: 537px; /* This should be set to be at least the height of the largest image in the slideshow */
+    /*display: flex;*/
+    /*align-content: center center;*/
+    /*width: 400px;*/
+    /*height: auto;*/
+    /*background-color: #e0e1e3;*/
+    /*background: no-repeat center center;*/
+    /*background-image: url(Images/webDesign_425.png);*/
+  }
+  /*.slideshow {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: #e0e1e3;
+	background: no-repeat center center;
+	background-image: url(Images/webDesign_425.png);
+} */
+  a.arrowLeft {
+    background-image: url(Images/btn_left.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 80px auto 5px;
+  }
+  .arrowLeft:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.arrowRight {
+    background-image: url(Images/btn_right.png);
+    display: inline-flex;
+    height: 6.5em;
+    width: 3em;
+    background-color: #a7a9ac;
+    margin: 100px 5px 115px 135px;
+  }
+  a.arrowRight:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .designFooter {
+    display: inline-block;
+    background-color: #58595b;
+  }
+  a.btn_Designs {
+    display: flex;
+    float: none;
+    width: 26em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 0em 0em 1em 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  a.btn_Designs:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  a.btn_Quote {
+    display: flex;
+    float: none;
+    width: 26em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 0.5em 0em 1em 0.5em;
+    padding: 0.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a.btn_Quote:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    min-height: 3em;
+    background-color: #231f20;
+    margin: 0em;
+  }
+  .content p {
+    font-size: 0.5em;
+    margin: auto;
+    color: #939598;
+  }
+  .backTop p {
+    font-size: 0.5em;
+    width: 1em;
+    text-align: right;
+    margin: 0.5em 1.25em;
+  }
+  /*Contact page*/
+  .messageForm {
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 79%;
+    height: 70%;
+    background-color: #ffffff;
+    margin: -655px 35px;
+  }
+  .messageForm h2 {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: "Myriad Pro", "Helvetica", sans-serif;
+    color: #575451;
+    margin: 1em 1em;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  .messageForm p {
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: "Myriad Pro", "Helvetica", sans-serif;
+    color: #575451;
+    margin: 1em;
+    line-height: 1em;
+  }
+  .q {
+    margin: 0em 1em;
+    width: 84%;
+    height: 2.4em;
+  }
+  .Message-form {
+    align-content: center;
+    align-items: center;
+    margin: 0em 0.7em;
+    width: 91%;
+    height: 16em;
+  }
+  .Map {
+    display: none;
+  }
+  a.btn_Message {
+    display: flex;
+    width: 13em;
+    height: 3em;
+    color: #575451;
+    background-color: #d1d3d4;
+    font-size: 0.7em;
+    border-radius: 0.5em;
+    margin: 2em auto;
+    padding: 0.7em;
+    text-decoration: none;
+  }
+  a.btn_Message:hover {
+    background-color: #847151;
+    color: #fff;
+  }
+  .address {
+    height: 5em;
+    width: 10em;
+  }
+  .address p {
+    font-size: 0.7em;
+    font-weight: normal;
+    font-family: "Myriad Pro", "Helvetica", sans-serif;
+    color: #575451;
+    margin: 1em;
+    line-height: 0.5em;
+  }
+  .buffer {
+    display: flex;
+    height: 8em;
+    background-color: #d1d3d4;
+  }
+}
+.footlink {
+}
+.hyper {
+}

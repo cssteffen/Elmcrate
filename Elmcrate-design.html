@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--HTML HOME PAGE code by Cara Steffen-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="Responsive Image Gallery with jQuery" />
+    <meta
+      name="keywords"
+      content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="elastislide.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <noscript>
+      <style>
+        .es-carousel ul {
+          display: block;
+        }
+      </style>
+    </noscript>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+      <div class="rg-image-wrapper">
+      	{{if itemsCount > 1}}
+      		<div class="rg-image-nav">
+      			<a href="#" class="rg-image-nav-prev">Previous Image</a>
+      			<a href="#" class="rg-image-nav-next">Next Image</a>
+      		</div>
+      	{{/if}}
+      	<div class="rg-image"></div>
+      	<div class="rg-loading"></div>
+      	<div class="rg-caption-wrapper">
+      		<div class="rg-caption" style="display:none;">
+      			<p></p>
+      		</div>
+      	</div>
+      </div>
+    </script>
+    <!--this allows viewer to not have to zoom in-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Steffen_Cara_Elmcrate_home</title>
+    <meta
+      name="description"
+      content="Portfolio featuring different skillset elements by Cara Steffen"
+    />
+    <link href="Elmcrate.css" rel="stylesheet" type="text/css" />
+    <link href="demo.css" rel="stylesheet" type="text/css" />
+    <script src="picturefill.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <a
+          class="logo"
+          title="Elmcrate"
+          href="http://www.public.asu.edu/~cssteffe/Elmcrate/Elmcrate.html"
+        ></a>
+        <nav id="single-nav" class="single-nav">
+          <ul>
+            <li>
+              <a
+                href="http://www.public.asu.edu/~cssteffe/Elmcrate/Elmcrate.html"
+                title="Home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.public.asu.edu/~cssteffe/Elmcrate/Elmcrate-about.html"
+                title="About"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.public.asu.edu/~cssteffe/Elmcrate/Elmcrate-photography.html"
+                >Photography</a
+              >
+            </li>
+            <li><a href="#" title="Design">Design</a></li>
+            <li>
+              <a
+                href="http://www.public.asu.edu/~cssteffe/Elmcrate/Elmcrate-contact.html"
+                title="Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header -->
+      <h2 class="Title_Words">Design + Marketing</h2>
+      <div>
+        <div class="content_Slideshow">
+          <div id="rg-gallery" class="rg-gallery">
+            <div class="rg-thumbs">
+              <!-- Elastislide Carousel Thumbnail Viewer -->
+              <div class="es-carousel-wrapper">
+                <div class="es-nav">
+                  <span class="es-nav-prev">Previous</span>
+                  <span class="es-nav-next">Next</span>
+                </div>
+                <div class="es-carousel">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test1.png"
+                          data-large="../Elmcrate/test1.png"
+                          alt="image01"
+                          data-description="testing"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test2.png"
+                          data-large="../Elmcrate/test2.png"
+                          alt="image02"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test3.png"
+                          data-large="../Elmcrate/test3.png"
+                          alt="image03"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test4.png"
+                          data-large="../Elmcrate/test4.png"
+                          alt="image04"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test5.png"
+                          data-large="../Elmcrate/test5.png"
+                          alt="image05"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test6.png"
+                          data-large="../Elmcrate/test6.png"
+                          alt="image06"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test7.png"
+                          data-large="../Elmcrate/test7.png"
+                          alt="image07"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test8.png"
+                          data-large="../Elmcrate/test8.png"
+                          alt="image08"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test9.png"
+                          data-large="../Elmcrate/test9.png"
+                          alt="image09"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test10.png"
+                          data-large="../Elmcrate/test10.png"
+                          alt="image10"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test4.png"
+                          data-large="../Elmcrate/test4.png"
+                          alt="image11"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test7.png"
+                          data-large="../Elmcrate/test7.png"
+                          alt="image11"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test3.png"
+                          data-large="../Elmcrate/test3.png"
+                          alt="image12"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test6.png"
+                          data-large="../Elmcrate/test6.png"
+                          alt="image13"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test1.png"
+                          data-large="../Elmcrate/test1.png"
+                          alt="image14"
+                          data-description="testing"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test2.png"
+                          data-large="../Elmcrate/test2.png"
+                          alt="image15"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test3.png"
+                          data-large="../Elmcrate/test3.png"
+                          alt="image16"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../Elmcrate/test4.png"
+                          data-large="../Elmcrate/test4.png"
+                          alt="image17"
+                          data-description="Description"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Elastislide Carousel Thumbnail Viewer -->
+            </div>
+            <!-- rg-thumbs -->
+          </div>
+          <!-- rg-gallery -->
+        </div>
+        <!-- content -->
+      </div>
+      <!-- container -->
+      <script
+        type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      ></script>
+      <script type="text/javascript" src="jquery.tmpl.min.js"></script>
+      <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="jquery.elastislide.js"></script>
+      <script type="text/javascript" src="gallery.js"></script>
+
+      <section class="Design" title="Design">
+        <!--<h2>Design</h2>-->
+        <!--<div class="slideshow"> <a class ="arrowLeft" title="Arrow Left" href="#"></a><a class ="arrowRight" title="Arrow Right" href="#"></a> </div>-->
+        <div class="designFooter">
+          <a
+            class="btn_Designs"
+            title="More Info"
+            href="http://www.public.asu.edu/~cssteffe/Elmcrate/Elmcrate-about.html"
+          >
+            <h3>More Info</h3>
+          </a>
+          <a
+            class="btn_Quote"
+            title="Request a Quote"
+            href="mailto:cssteffe@asu.edu"
+          >
+            <h3>Request a Quote</h3>
+          </a>
+        </div>
+      </section>
+      <footer>
+        <div class="content">
+          <p class="copyRight">&copy; Elmcrate 2017 All rights reserved</p>
+          <p class="emailFooter">
+            <a href="mailto:cssteffe@asu.edu" class="footlink"
+              >info@elmcrate.com</a
+            >
+          </p>
+          <div class="backTop">
+            <p>back to top</p>
+            <div class="arrowUp"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
